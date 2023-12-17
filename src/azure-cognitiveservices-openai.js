@@ -38,7 +38,9 @@ export const imageGeneration = async (prompt) => {
     
     // generate image
     const requestBody = {
-        'prompt': prompt
+        'prompt': prompt,
+        'size' : "1024x1024",
+        'model' : "dall-e-3"
         }
 
     try {

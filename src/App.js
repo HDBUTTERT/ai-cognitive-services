@@ -59,7 +59,7 @@ function App() {
       return (
         <div>
           <h2>Image Generation</h2>
-          <div><img src={generatedImage.URL} height="200" border="1" alt={generatedImage.prompt} /></div>
+          <div><img src={generatedImage.URL} height="1024" width="1024" border="1" alt={generatedImage.prompt} /></div>
           {PrettyPrintJson(generatedImage)}
         </div>
       )
@@ -85,7 +85,7 @@ function App() {
             <label>Insert URL or type prompt: </label>
           </div>
           <div>
-            <input autoFocus="autofocus" type="text" id="input" defaultValue={input} placeholder="Enter URL to analyze or textual prompt to generate an image" size="50" onChange={handleChange} 
+            <input autoFocus="autofocus" type="text" id="input" defaultValue={input} placeholder="Enter URL to analyze or textual prompt to generate an image" size="100" onChange={handleChange} 
             onFocus={(e) => {e.target.selectionStart = cursor;}}></input>
           </div>
           <button onClick={onFileUrlEntered}>Analyze</button>
