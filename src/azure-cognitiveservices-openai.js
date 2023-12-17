@@ -1,4 +1,5 @@
 // Authentication requirements
+require('dotenv').config();
 const key = process.env.REACT_APP_AZURE_OPENAI_KEY;
 const endpoint = process.env.REACT_APP_AZURE_OPENAI_ENDPOINT;
 const api_type = process.env.REACT_APP_AZURE_OPENAI_API_TYPE ? process.env.REACT_APP_AZURE_OPENAI_API_TYPE : "azure";

@@ -2,8 +2,8 @@
 
 // List of sample images to use in demo
 import RandomImageUrl from './DefaultImages';
-
 // Authentication requirements
+require('dotenv').config();
 const key = process.env.REACT_APP_AZURE_COMPUTER_VISION_KEY;
 const endpoint = process.env.REACT_APP_AZURE_COMPUTER_VISION_ENDPOINT;
 
